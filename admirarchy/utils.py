@@ -88,7 +88,7 @@ class HierarchicalChangeList(ChangeList):
         :param args:
         :return:
         """
-        model_admin = args[-1]
+        model_admin = args[-2]
         model_admin._current_changelist = self
         self._hierarchy = model_admin.hierarchy
         self._request = args[0]
